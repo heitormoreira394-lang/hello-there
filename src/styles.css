@@ -156,12 +156,15 @@
 }
 
 .boutique {
-  --ink: #32231e;
-  --muted: #66534a;
-  --gold: #79552e;
-  --paper: #f9f5ee;
-  --sand: #eee3d4;
-  --line: #d8c7b5;
+  --ink: #39281f;
+  --muted: #604c42;
+  --accent: #803b1a;
+  --paper: #fffaf5;
+  --peach: #ffdfc7;
+  --peach-button: #ffc69e;
+  --peach-hover: #ffb78a;
+  --sage: #eff7eb;
+  --line: #c9ad9c;
   --display: "Playfair Display", Georgia, serif;
   background: var(--paper);
   color: var(--ink);
@@ -175,7 +178,7 @@
 }
 
 .boutique :is(a, iframe):focus-visible {
-  outline: 2px solid var(--gold);
+  outline: 2px solid var(--accent);
   outline-offset: 5px;
 }
 
@@ -215,7 +218,7 @@
 
 .boutique-wordmark span,
 .boutique-eyebrow {
-  color: var(--gold);
+  color: var(--accent);
   font-family: "DM Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
@@ -254,10 +257,10 @@
   align-items: center;
   justify-content: center;
   gap: 0.7rem;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--accent);
   padding: 0.65rem 1.1rem;
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--peach-button);
+  color: var(--ink);
   font-size: 0.95rem;
   font-weight: 700;
   transition:
@@ -267,18 +270,14 @@
 }
 
 .boutique-button:hover {
-  border-color: var(--gold);
-  background: var(--gold);
+  border-color: var(--accent);
+  background: var(--peach-hover);
 }
 
 .boutique-button-outline {
   border-color: var(--line);
   background: transparent;
   color: var(--ink);
-}
-
-.boutique-button-outline:hover {
-  color: var(--paper);
 }
 
 .boutique-hero {
@@ -294,7 +293,7 @@
   align-items: flex-start;
   justify-content: center;
   padding: clamp(2rem, 5vw, 5rem);
-  background: var(--sand);
+  background: var(--peach);
   animation: boutique-appear 550ms ease-out both;
 }
 
@@ -314,7 +313,7 @@
 
 .boutique h1 em {
   display: block;
-  color: var(--gold);
+  color: var(--accent);
 }
 
 .boutique h2 {
@@ -339,7 +338,7 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: #7a5944;
+  background: var(--peach);
 }
 
 .boutique-hero-image img,
@@ -372,7 +371,7 @@
   align-items: center;
   gap: 0.55rem;
   margin-block: 0.8rem;
-  color: var(--gold);
+  color: var(--accent);
   font-size: 0.9rem;
   font-weight: 700;
 }
@@ -380,7 +379,7 @@
 .boutique-showcase,
 .boutique-visit {
   padding-block: clamp(3rem, 7vw, 6rem);
-  background: #f1e8dc;
+  background: var(--sage);
 }
 
 .boutique-section-grid {
@@ -399,7 +398,7 @@
   align-items: center;
   gap: 0.45rem;
   padding-block: 0.45rem;
-  color: var(--gold);
+  color: var(--accent);
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 0.3em;
@@ -436,7 +435,7 @@
 
 .boutique-review-grid figure > span {
   height: 2.75rem;
-  color: var(--gold);
+  color: var(--accent);
   font: 3.8rem/1 var(--display);
 }
 
@@ -468,7 +467,7 @@
   flex-shrink: 0;
   align-self: flex-start;
   margin-top: 0.2rem;
-  color: var(--gold);
+  color: var(--accent);
 }
 
 .boutique-visit iframe {
